@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-transform: none;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333333;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.25;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 29px 8px;
+  max-width: 1240px;
+  min-height: 1080px;
+}
+
+.section__form {
+  margin-bottom: 72px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 392px;
+  position: relative;
+  transition: all 0.3s;
+}
+.form:first-child {
+  margin-bottom: 32px;
+}
+.form:hover .form__selection {
+  border-color: #999999;
+}
+.form.active .form__selection-content {
+  display: block;
+}
+.form svg {
+  transform: rotate(180deg);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.form.active svg {
+  transform: rotate(0);
+}
+
+.form__title {
+  margin-bottom: 8px;
+}
+
+.form__selection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 1px #EBEBEB;
+  border-radius: 5px;
+  padding: 12px 16px;
+  cursor: pointer;
+}
+.form__selection.active .form__selection:hover {
+  border-color: #999999;
+}
+.form__selection-text {
+  line-height: 24px;
+  color: #999999;
+}
+.form__selection-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 82px;
+  width: 100%;
+  z-index: 1;
+  background: #FFFFFF;
+}
+
+.content-wrapper {
+  padding: 8px;
+  border: solid 1px #EBEBEB;
+  border-radius: 5px;
+}
+
+.content__list {
+  overflow-y: scroll;
+  padding-right: 8px;
+  height: 216px;
+}
+.content__list::-webkit-scrollbar {
+  width: 4px;
+  height: 80px;
+}
+.content__list::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #EBEBEB;
+}
+.content__list-item {
+  display: flex;
+  flex-direction: row;
+  column-gap: 8px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  padding: 8px 16px;
+}
+.content__list-item:last-child {
+  margin-bottom: 0;
+}
+.content__list-item:hover {
+  background-color: #EBEBEB;
+}
+
+.list-item-img {
+  display: flex;
+}
+
+.content {
+  max-width: 704px;
+}
+
+.content__title {
+  margin-bottom: 32px;
+}
+
+p {
+  margin-bottom: 16px;
+}
+
+/*# sourceMappingURL=style.css.map */
