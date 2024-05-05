@@ -8,8 +8,10 @@ window.addEventListener('load',()=>{
         title.addEventListener('click', function (e) {
             e.stopPropagation();
             item.classList.toggle('active');
+
+            let thisTitle = this;
             selectForm.forEach(function (itm){
-               if (!(e.target === itm.querySelector('.form__selection'))) {
+               if (thisTitle !== itm.querySelector('.form__selection')) {
                    itm.classList.remove('active')
                }
             })
@@ -28,10 +30,8 @@ window.addEventListener('load',()=>{
             });
         });
 
-        document.addEventListener('click', function (e){
-            if (!(e.target === title)) {
-                item.classList.remove('active');
-            }
+        document.addEventListener('click',  ()=>{
+            item.classList.remove('active');
         });
     });
 });
