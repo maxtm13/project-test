@@ -16,7 +16,7 @@
     <main class="main">
         <section class="section__form">
             <div class="form">
-                <div class="form__title" >Выпадающий список_1</div>
+                <div class="form__title">Выпадающий список_1</div>
                 <div class="form__selection">
                     <div class="form__selection-text" data-set='title'>Выберите параметр</div>
                     <div class="form__selection-btn">
@@ -34,43 +34,37 @@
                                     <img class="image" src="img/twemoji_flag-russia.png" alt="flag">
                                 </div>
                                 <div class="list-item-text">Параметр 1</div>
-
                             </li>
                             <li class="content__list-item">
                                 <div class="list-item-img">
                                     <img class="image" src="img/twemoji_flag-brazil.png" alt="flag">
                                 </div>
                                 <div class="list-item-text">Параметр 2</div>
-
                             </li>
                             <li class="content__list-item">
                                 <div class="list-item-img">
                                     <img class="image" src="img/twemoji_flag-china.png" alt="flag">
                                 </div>
                                 <div class="list-item-text">Параметр 3</div>
-
                             </li>
                             <li class="content__list-item">
                                 <div class="list-item-img">
                                     <img class="image" src="img/twemoji_flag-argentina.png" alt="flag">
                                 </div>
                                 <div class="list-item-text">Параметр 4</div>
-
                             </li>
                             <li class="content__list-item">
                                 <div class="list-item-img">
                                     <img class="image" src="img/twemoji_flag-belarus.png" alt="flag">
                                 </div>
                                 <div class="list-item-text">Параметр 5</div>
-
                             </li>
-
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="form">
-                <div class="form__title" >Выпадающий список_1</div>
+                <div class="form__title">Выпадающий список_1</div>
                 <div class="form__selection">
                     <div class="form__selection-text" data-set='alert'>Выберите параметр</div>
                     <div class="form__selection-btn">
@@ -88,37 +82,31 @@
                                     <img class="image" src="img/twemoji_flag-russia.png" alt="flag">
                                 </div>
                                 <div class="list-item-text">Параметр 1</div>
-
                             </li>
                             <li class="content__list-item">
                                 <div class="list-item-img">
                                     <img class="image" src="img/twemoji_flag-brazil.png" alt="flag">
                                 </div>
                                 <div class="list-item-text">Параметр 2</div>
-
                             </li>
                             <li class="content__list-item">
                                 <div class="list-item-img">
                                     <img class="image" src="img/twemoji_flag-china.png" alt="flag">
                                 </div>
                                 <div class="list-item-text">Параметр 3</div>
-
                             </li>
                             <li class="content__list-item">
                                 <div class="list-item-img">
                                     <img class="image" src="img/twemoji_flag-argentina.png" alt="flag">
                                 </div>
                                 <div class="list-item-text">Параметр 4</div>
-
                             </li>
                             <li class="content__list-item">
                                 <div class="list-item-img">
                                     <img class="image" src="img/twemoji_flag-belarus.png" alt="flag">
                                 </div>
                                 <div class="list-item-text">Параметр 5</div>
-
                             </li>
-
                         </ul>
                     </div>
                 </div>
@@ -128,37 +116,40 @@
         <section class="content">
             <div class="content__inner">
                 <h1 class="content__title">
-                    <?php if (!empty($cmsContentTitle))  {
+                    <?php if (!empty($cmsContentTitle)) {
                         echo $cmsContentTitle;
-                    }
-                    else {?>
-                    Заголовок
+                    } else { ?>
+                        Заголовок
                     <?php }
                     ?>
                 </h1>
                 <div class="content__text">
                     <?php
-                    if (!(empty($cmsContentParagraph))) {
-                        echo $cmsContentParagraph;
-                    }
-                    else { ?>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-                        mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
-                        quis enim.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-                        mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
-                        quis enim.</p>
-                    <?php
-                    }
+                        if (!(empty($cmsContentParagraph))) {
+                            echo $cmsContentParagraph;
+                        } else { ?>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                                dolor.
+                                Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                                ridiculus
+                                mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+                                consequat massa
+                                quis enim.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                                dolor.
+                                Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                                ridiculus
+                                mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+                                consequat massa
+                                quis enim.</p>
+                            <?php
+                        }
                     ?>
                 </div>
             </div>
         </section>
     </main>
-
 </div>
-</body>
 <script src="js/script.js"></script>
+</body>
 </html>
