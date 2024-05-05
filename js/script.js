@@ -8,12 +8,16 @@ window.addEventListener('load',()=>{
         title.addEventListener('click', function (e) {
             e.stopPropagation();
             item.classList.toggle('active');
+            selectForm.forEach(function (itm){
+               if (!(e.target === itm.querySelector('.form__selection'))) {
+                   itm.classList.remove('active')
+               }
+            })
         });
 
         listItems.forEach(function (e) {
             e.addEventListener('click', function () {
                 title.querySelector('.form__selection-text').innerText = this.innerText;
-                console.log(title.querySelector('.form__selection-text').dataset['set']);
                 if (title.querySelector('.form__selection-text').dataset['set'] === 'title') {
                     document.title = this.innerText;
                 }

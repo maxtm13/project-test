@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <main class="main">
+            <form action="">
+                <div class="form">
+                    <label class="form__label" for="select1">Выпадающий список_1</label>
+                    <select class="form__select" name="select1" id="select1">
+                        <option class="form__select-default" value="Выберите параметр"></option>
+                        <option class="form__select" value=""><img class="form__select-icon" src="img/twemoji_flag-russia.png" alt="flag" sizes="24">Параметр 1</option>
+                        <option class="form__select" value=""><img class="form__select-icon" src="img/twemoji_flag-brazil.png" alt="flag" sizes="24">Параметр 2</option>
+                        <option class="form__select" value=""><img class="form__select-icon" src="img/twemoji_flag-brazil.png" alt="flag" sizes="24">Параметр 3</option>
+                        <option class="form__select" value=""><img class="form__select-icon" src="img/twemoji_flag-china.png" alt="flag" sizes="24">Параметр 4</option>
+                        <option class="form__select" value=""><img class="form__select-icon" src="img/twemoji_flag-belarus.png" alt="flag" sizes="24">Параметр 5</option>
+
+                    </select>
+                </div>
+            </form>
+        </main>
+
+    </div>
+</body>
+<script src="/js/script.js"></script>
+
+</html>
